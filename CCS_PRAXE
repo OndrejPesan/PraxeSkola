@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(55, 64, 70);
+    color: rgb(231, 231, 231);  
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    background: rgb(73, 27, 67);
+    
+}
+.boxes{
+    padding: 15px;
+}
+.leftbox {
+    float:left;
+    background:Red;
+    width:33.333%;
+    height:280px;
+}
+.middlebox{
+    float:left;
+    background:Green;
+    width:33.333%;
+    height:280px;
+}
+.rightbox{
+    float:left;
+    background:blue;
+    width:33.333%;
+    height:280px;
+}
+.txt{
+    text-align: center;
+}
+h1{
+    color:rgb(115, 143, 115);
+    text-align:center;
+}
