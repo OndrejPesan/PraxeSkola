@@ -1,0 +1,29 @@
+var episode = ("V is equal to ")
+var serial = ("S is equal to ")
+
+var r = numberR
+var v = numberH
+var p = 3.14
+d = r*r*v*p
+console.log(episode+d+"cm3")
+o = 2*p*r*v+r*r*p
+console.log(serial+o+"cm2")
+
+const calcButton = document.querySelector("[data-calc]")
+var t = numberA
+pudin=t*t*t
+console.log(episode+pudin+"cm3")
+e=6*t*t
+console.log(serial+e+"cm2")
+
+calcButton.addEventListener("click", () => {
+    var rare = numberZ
+var common = numberY
+var epic = numberX
+legendary = rare*common*epic
+console.log(episode+legendary+"cm3")
+awesome = 2*(rare*common + rare*epic + epic*common)
+console.log(serial+awesome+"cm2")
+return
+    
+})
