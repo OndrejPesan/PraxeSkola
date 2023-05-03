@@ -1,0 +1,20 @@
+import platform
+import psutil
+import subprocess
+import wmi
+from os import system
+system("cls>")
+
+# Základní informace o hardware
+print("=== Základní informace o hardware ===")
+print(f"CPU: {platform.processor()}")
+print(f"RAM: {psutil.virtual_memory().total/(1024**3):.2f} GB")
+print(f"Úložiště: {psutil.disk_usage('/').free/(1024**3):.2f} GB volné z {psutil.disk_usage('/').total/(1024**3):.2f} GB")
+c = wmi.WMI()
+gpu = c.Win32_VideoController()[0].Name
+print(f"GPU: {gpu}")
+gpu_card = c.Win32_VideoController()[0].AdapterCompatibility
+print(f"Grafická karta: {gpu_card}")
+
+print("\n=== Podrobnosti o operačním systému ===")
+print(f"OS: {platform.system()} {platform.release()}")
